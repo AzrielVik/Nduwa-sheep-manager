@@ -1,9 +1,9 @@
 from flask import request, jsonify, url_for
 from werkzeug.utils import secure_filename
 import os
-from app.config import UPLOAD_FOLDER, ALLOWED_EXTENSIONS
-from app import app, db
-from app.models import Sheep
+from .config import UPLOAD_FOLDER, ALLOWED_EXTENSIONS
+from . import app, db
+from .models import Sheep
 from sqlalchemy.exc import IntegrityError
 
 
