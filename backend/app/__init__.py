@@ -2,7 +2,8 @@ from flask import Flask, send_from_directory
 from flask_cors import CORS
 from flask_sqlalchemy import SQLAlchemy
 from flask_migrate import Migrate
-from app.config import UPLOAD_FOLDER, ALLOWED_EXTENSIONS
+from .config import UPLOAD_FOLDER, ALLOWED_EXTENSIONS
+
 
 app = Flask(__name__)
 CORS(app)
