@@ -1,4 +1,4 @@
-from app import db
+from . import db
 
 class Sheep(db.Model):
     __tablename__ = 'sheep'
